@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "./static/css/main.2df3d0a2.css",
+    "main.js": "./static/js/main.d71c3d22.js",
+    "static/media/neighbourhood.jpg": "./static/media/neighbourhood.45517a2f3fa61195500e.jpg",
+    "static/media/cultural_palace.jpg": "./static/media/cultural_palace.4f45f60e6d1a6cc6f9d5.jpg",
+    "static/media/neighbourhood_1.jpg": "./static/media/neighbourhood_1.a7ec46654ef7ee7c8147.jpg",
+    "static/media/ar_park_1.jpg": "./static/media/ar_park_1.4e24f1ecf6e9e231782a.jpg",
+    "static/media/museum.jpg": "./static/media/museum.7b0f4d89bb8d5686a90f.jpg",
+    "static/media/primary_colors_1.jpg": "./static/media/primary_colors_1.c74cdccc94f467311881.jpg",
+    "static/media/cultural_palace_1.jpg": "./static/media/cultural_palace_1.cd4692ad6a1fa1ffb2b7.jpg",
+    "static/media/ar_park.jpg": "./static/media/ar_park.c94a423ae61272c0fb50.jpg",
+    "static/media/museum_1.jpg": "./static/media/museum_1.d7fad654cebda2a5c7f3.jpg",
+    "static/media/primary_colors.jpg": "./static/media/primary_colors.a5b662fd03a687a82aca.jpg",
+    "static/media/scale_teacher.jpg": "./static/media/scale_teacher.7cdf0e5f439e13f63759.jpg",
+    "index.html": "./index.html",
+    "main.2df3d0a2.css.map": "./static/css/main.2df3d0a2.css.map",
+    "main.d71c3d22.js.map": "./static/js/main.d71c3d22.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2df3d0a2.css",
+    "static/js/main.d71c3d22.js"
+  ]
+}
