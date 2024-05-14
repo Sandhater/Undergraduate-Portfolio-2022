@@ -1,0 +1,99 @@
+/***********************************************头图区样式***************************************************/
+#TopInfo h1{
+    font-size: 4.5rem;
+}
+
+#TopInfo h2{
+    font-size: 3rem;
+}
+
+#TopInfo p{
+    font-size: 1.5rem;
+}
+
+#TopInfo a{
+    font-size: 1.5rem;
+    width: 12rem;
+    height: 3.5rem;
+}
+
+/********************************************首页卡片样式***************************************************/
+.MainParts{
+    display: inline-block;
+    width: 48%;
+}
+
+
+#StoryImg{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#StoryImg img{
+    width: 30%;
+}
+
+/******************************************主信息区通用样式*********************************************/
+.TextContent{
+    display: inline-block;
+    width: 50vw;
+    float: left;
+    margin-bottom: 2rem;
+}
+#MainContent p{
+    width: 100%;
+}
+.ImgContent{
+    display: inline-block;
+    width: 30vw;
+    margin-left: 6vw;
+    margin-bottom: 2rem;
+}
+
+/******************************************idea页面样式*********************************************/
+#StageIndicator{
+    width: 100%;
+    margin-left: 0;
+}
+
+#AboutTheme img, #AboutForm img, #AboutLayOut img{
+    width: 100%;
+    margin-left: 0;
+}
+
+.TextContent .StageDescription{
+    display: block;
+}
+
+.ImgContent .StageDescription{
+    display: none;
+}
+
+/***************************************drawings页面样式********************************************/
+#Plan img, #EleAndSection img{
+    width: 100%;
+    margin: 1rem 0;
+}
+
+/***************************************rendering页面样式********************************************/
+#FarView img, #NearView img{
+    width: 100%;
+}
+
+#FarView .TextContent, #NearView .TextContent{
+    width: 86vw;
+}
+
+#FarView .ImgContent, #NearView .ImgContent{
+    width: 50vw;
+    margin: 2rem 25vw 4rem 25vw;
+}
+
+#Video{
+    width: 86vw;
+}
+
+#StartFarViewBtn{
+    margin-left: 20vw;
+}

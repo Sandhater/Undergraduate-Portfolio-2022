@@ -1,0 +1,147 @@
+/***********************************************头图区样式***************************************************/
+#TopInfo{
+    display: flex;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    background-image: url("../img/Poster.jpg") ;
+    height: 100vh;
+    background-position: center;
+    background-repeat: repeat-x;
+    background-size: auto 100%;
+}
+
+#TopInfo h1{
+    margin-top: 50vh;
+    margin-left: 0px;
+    font-weight: bolder;
+    font-size: 3rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: linear-gradient(white, rgb(255, 230, 213));
+    -webkit-background-clip: text;
+    color:transparent;
+}
+
+#TopInfo h2{
+    font-weight: bolder;
+    font-size: 1.75rem;
+    margin-top: 0.5rem;
+    background-image: linear-gradient(rgb(255, 230, 213), rgb(255, 202, 167));
+    -webkit-background-clip: text;
+    color:transparent;
+}
+
+#TopInfo p{
+    font-weight: bold;
+    font-size: 1rem;
+    width: 80%;
+    margin: 0.75rem auto;
+    line-height: 2;
+}
+
+#TopInfo a{
+    display: flex;
+    color: white;
+    font-size: 1rem;
+    border: 2px solid white;
+    border-radius: 4rem;
+    height: 2.5rem;
+    width: 8rem;
+    align-items: center;
+    justify-content: center;
+}
+
+/******************************************基本信息区样式***************************************************/
+#BasicInfo{
+    display: flex;
+    justify-content:space-between;
+    flex-wrap: wrap;
+    width: 90%;
+    margin-top: 2vh;
+    margin-left: 7vw;
+    padding: 0;
+    width: 86vw;
+    font-size: 1.125rem;
+    font-weight: 600;
+    list-style: none;
+}
+
+#BasicInfo li{
+    display: inline-block;
+    margin: 0.5rem 0;
+}
+
+/******************************************主信息区样式***************************************************/
+#Main{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 86vw;
+    margin-left: 7vw;
+    margin-top: 2rem;
+}
+
+.MainParts{
+    margin-bottom: 3rem;
+}
+
+#IdeaPart{
+    margin-top: 0rem;
+}
+
+.MainParts h2{
+    font-weight: 800;
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.Tabs{
+    position: relative;
+    border-radius: 16px;
+    box-shadow: 0px 6px 8px rgba(140, 140, 140, 0.4);
+    font-size: 0.5rem;
+    padding-top: 24px;
+}
+
+.Tabs p{
+    position: relative;
+    width: 86%;
+    margin-left: 7%;
+    font-size: 1rem;
+    line-height: 2;
+}
+
+.Tabs a{
+    font-weight: 600;
+    margin-left: 7%;
+    font-size: 1rem;
+}
+
+.TabImg{
+    position: relative;
+    margin-top: 1.5rem;
+    border-radius: 0 0 16px 16px;
+    bottom: 0;
+    width: 100%;
+    /*用于取消卡片下方残留的白边*/
+    vertical-align: middle;
+}
+
+#IdeaPart h2{
+    color: rgba(231, 111, 81, 1);
+}
+
+#DrawingsPart h2{
+    color: rgba(233, 196, 106, 1);
+}
+
+#RenderingPart h2{
+    color: rgba(42, 157, 143, 1);
+}
+
+#MorePart h2{
+    color: rgba(38, 70, 83, 1);
+}

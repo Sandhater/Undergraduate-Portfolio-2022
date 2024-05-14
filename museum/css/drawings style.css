@@ -1,0 +1,36 @@
+/******************************************标题与头图区样式***************************************************/
+.Title{
+    color: rgb(233, 196, 106);
+}
+
+.Banner{
+    background-image: url('../img/DrawingsTab.jpg');
+}
+
+/******************************************主内容区样式***************************************************/
+h2{
+    background-image: linear-gradient(to bottom right, white, rgb(233, 196, 106));
+    -webkit-background-clip: text;
+    color:transparent;
+}
+
+#Plan img, #EleAndSection img{
+    width: 100vw;
+    margin: 1rem 0;
+}
+
+.ImgName{
+    text-align: center;
+    font-size: 600;
+    font-size: 1rem;
+    margin-bottom: 2rem;
+    color: #aaaaaa;
+}
+
+.ThemeColor{
+    color:rgb(233, 196, 106);
+}
+
+#GoToNext{
+    background-color: rgb(233, 196, 106);
+}

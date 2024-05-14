@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+        <title>作业博物馆</title>
+        <link rel="shortcut icon" href="img/logo.ico">
+        <link href="https://cdn.bootcdn.net/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet">
+        <!--下面版本的animate仅限配合wow使用-->
+        <link href="https://cdn.bootcdn.net/ajax/libs/animate.css/3.7.2/animate.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.css">
+        <link href="css/basic.css" rel="stylesheet">
+        <link href="css/more style.css" rel="stylesheet">
+        <link href="css/pad.css" media="screen and (min-width:768px)" rel="stylesheet">
+        <link href="css/desktop.css" media="screen and (min-width:1080px)" rel="stylesheet">
+        <link href="css/desktop.css" media="screen and (orientation:landscape)" rel="stylesheet">
+        <script src="js/jquery-3.6.0.min.js"></script>
+        <script src="js/reaction.js"></script>
+        <script src="https://cdn.bootcdn.net/ajax/libs/wow/1.1.2/wow.min.js"></script>
+        <script>
+            new WOW().init();
+        </script>
+    </head>
+    <body>
+        <div id="Nav">
+            <button id="NavBtn" class="animate__animated animate__bounceInUp" onclick="ShowNavMenu()">
+                <i id="NavBtnIcon" class="fa fa-bars"></i>
+                <i id="ShutNavIcon" class="fa fa-times"></i>
+            </button>
+            <ol id="NavMenu" class="animate__animated">
+                <li>
+                    <a href="index.html">
+                        <p class="PageName">回到主页</p><div class="PageIcon"><i class="fa fa-home"></i></div>
+                    </a>
+                </li>
+                <li>
+                    <a href="idea.html">
+                        <p class="PageName">设计生成</p><div class="PageIcon"><i class="fa fa-lightbulb-o"></i></div>
+                    </a>
+                </li>
+                <li>
+                    <a href="drawings.html">
+                        <p class="PageName">技术图纸</p><div class="PageIcon"><i class="fa fa-pencil"></i></div>
+                    </a>
+                </li>
+                <li>
+                    <a href="rendering.html">
+                        <p class="PageName">效果展示</p><div class="PageIcon"><i class="fa fa-picture-o"></i></div>
+                    </a>
+                </li>
+            </ol>
+        </div>
+
+        <div class="Title">
+            <i class="fa fa-info animate__animated animate__fadeInDown"></i>
+            <h1 class="animate__animated animate__fadeInDown">更多内容</h1>
+        </div>
+
+        <div class="Banner animate__animated animate__slideInDown"></div>
+
+        <div id="MainContent">
+            <div id="Explosion">
+                <h2 class="wow pulse">爆炸图</h2>
+                <button id="ExplodeBtn" onclick="Explode()" class="animate__animated animate__pulse">点击爆炸</button>
+                <div id="ExplosionContent" class="animate__animated">
+                    <div class="TextContent">
+                        <h3 class="Slogan">嘣！——<br><span class="Italic ThemeColor">爆炸图</span>来也~</h3>
+                    </div>
+                    <img src="img/Explosion.png">
+                </div>
+            </div>
+
+            <div id="Story">
+                <h2 class="wow pulse">设计期望</h2>
+                <div id="StoryImg">
+                    <img class="wow slideInUp" src="img/Expectation1.png">
+                    <img class="wow slideInUp" src="img/Expectation2.png">
+                    <img class="wow slideInUp" src="img/Expectation3.png">
+                </div>
+            </div>
+        </div>
+
+        <a href="index.html" id="GoToNext">返回主页</a>
+
+        <div id="Footer">
+            <p id="Acknowledgment">
+                感谢jQuery提供的JavaScript支持；<br>
+                感谢Animate.css和wow.js提供的动效支持；<br>
+                也感谢你的观看！<br>
+            </p>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+        <title>作业博物馆</title>
+        <link rel="shortcut icon" href="img/logo.ico">
+        <link href="https://cdn.bootcdn.net/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet">
+        <!--下面版本的animate仅限配合wow使用-->
+            <link href="https://cdn.bootcdn.net/ajax/libs/animate.css/3.7.2/animate.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.css">
+        <link href="css/basic.css" rel="stylesheet">
+        <link href="css/index style.css" rel="stylesheet">
+        <link href="css/pad.css" media="screen and (min-width:768px)" rel="stylesheet">
+        <link href="css/desktop.css" media="screen and (min-width:1080px)" rel="stylesheet">
+        <link href="css/desktop.css" media="screen and (orientation:landscape)" rel="stylesheet">
+        <script src="js/jquery-3.6.0.min.js"></script>
+        <script src="js/reaction.js"></script>
+        <script src="https://cdn.bootcdn.net/ajax/libs/wow/1.1.2/wow.min.js"></script>
+        <script>
+            new WOW().init();
+        </script>
+    </head>
+    <body>
+        <div id="Nav">
+            <button id="NavBtn" class="animate__animated animate__bounceInUp" onclick="ShowNavMenu()">
+                <i id="NavBtnIcon" class="fa fa-bars"></i>
+                <i id="ShutNavIcon" class="fa fa-times"></i>
+            </button>
+            <ol id="NavMenu" class="animate__animated">
+                <li>
+                    <a href="idea.html">
+                        <p class="PageName">设计生成</p><div class="PageIcon"><i class="fa fa-lightbulb-o"></i></div>
+                    </a>
+                </li>
+                <li>
+                    <a href="drawings.html">
+                        <p class="PageName">技术图纸</p><div class="PageIcon"><i class="fa fa-pencil"></i></div>
+                    </a>
+                </li>
+                <li>
+                    <a href="rendering.html">
+                        <p class="PageName">效果展示</p><div class="PageIcon"><i class="fa fa-picture-o"></i></div>
+                    </a>
+                </li>
+                <li>
+                    <a href="more.html">
+                        <p class="PageName">更多内容</p><div class="PageIcon"><i class="fa fa-info"></i></div>
+                    </a>
+                </li>
+            </ol>
+        </div>
+
+        <div id="TopInfo">
+            <h1 class="animate__animated animate__bounceInDown">游学&望道</h1>
+            <h2 class="animate__animated animate__bounceInDown">清华作业博物馆设计</h2>
+            <p class="animate__animated animate__bounceInDown">
+                来这座博物馆<br>
+                在一个个岛屿间漫游<br>
+                透过玻璃向厅内看去<br>
+                你是自远方而来的望道者
+            </p>
+            <a href="video.html" class="animate__animated animate__bounceInDown">观看视频</a>
+        </div>
+
+        <ul id="BasicInfo">
+            <li>✒️&emsp;学生：鲁良佑</li>
+            <li>🧑🏻‍🏫&emsp;指导老师：刘畅</li>
+            <li>📅&emsp;交图日期：2021年10月30日</li>
+            <li>📐&emsp;建筑面积：4952.1m²</li>
+        </ul>
+
+        <div id="Main">
+            <div id="IdeaPart" class="MainParts">
+                <h2 class="wow slideInUp">设计生成</h2>
+                <div class="Tabs wow zoomIn">
+                    <p>博物馆千千万万，这座博物馆为何以作业为主题？在西湖游泳池的场地上，设计者又考虑以何种方式组织起建筑空间？</p>
+                    <a href="idea.html">详细了解→</a>
+                    <img class="TabImg" src="img/IdeaTab.jpg">
+                </div>
+            </div>
+            <div id="DrawingsPart" class="MainParts">
+                <h2 class="wow slideInUp">技术图纸</h2>
+                <div class="Tabs wow zoomIn">
+                    <p>平面、立面、剖面，将从不同角度诠释这座博物馆。而在总览全局之后，还可以去瞧瞧细部，了解柱、梁、栏杆等构件将以何种方式搭接。</p>
+                    <a href="drawings.html">详细了解→</a>
+                    <img class="TabImg" src="img/DrawingsTab.jpg">
+                </div>
+            </div>
+            <div id="RenderingPart" class="MainParts">
+                <h2 class="wow slideInUp">效果展示</h2>
+                <div class="Tabs wow zoomIn">
+                    <p>树木掩映，轻盈悬空。斜檐成坡，立柱成林。东看、西看、南看、北看；上至高空俯视，下至广场旁观——处处有精彩。</p>
+                    <a href="rendering.html">详细了解→</a>
+                    <img class="TabImg" src="img/RenderingTab.jpg">
+                </div>
+            </div>
+            <div id="MorePart" class="MainParts">
+                <h2 class="wow slideInUp">更多内容</h2>
+                <div class="Tabs wow zoomIn">
+                    <p>概念、图纸、渲染，样样都在讲述这座博物馆的故事，但故事可还有很多很多。更多的内容，在此与你分享！</p>
+                    <a href="more.html">详细了解→</a>
+                    <img class="TabImg" src="img/MoreTab.jpg">
+                </div>
+            </div>
+        </div>
+
+        <div id="Footer">
+            <p id="Acknowledgment">
+                本网站基于以下开源成果：<br>
+                jQuery.js&emsp;Animate.css&emsp;wow.js<br>
+            </p>
+        </div>
+    </body>
+</html>

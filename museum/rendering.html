@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+        <title>作业博物馆</title>
+        <link rel="shortcut icon" href="img/logo.ico">
+        <link href="https://cdn.bootcdn.net/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet">
+        <!--下面版本的animate仅限配合wow使用-->
+        <link href="https://cdn.bootcdn.net/ajax/libs/animate.css/3.7.2/animate.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.css">
+        <link href="css/basic.css" rel="stylesheet">
+        <link href="css/rendering style.css" rel="stylesheet">
+        <link href="css/pad.css" media="screen and (min-width:768px)" rel="stylesheet">
+        <link href="css/desktop.css" media="screen and (min-width:1080px)" rel="stylesheet">
+        <link href="css/desktop.css" media="screen and (orientation:landscape)" rel="stylesheet">
+        <script src="js/jquery-3.6.0.min.js"></script>
+        <script src="js/reaction.js"></script>
+        <script src="https://cdn.bootcdn.net/ajax/libs/wow/1.1.2/wow.min.js"></script>
+        <script>
+            new WOW().init();
+        </script>
+    </head>
+    <body>
+        <div id="Nav">
+            <button id="NavBtn" class="animate__animated animate__bounceInUp" onclick="ShowNavMenu()">
+                <i id="NavBtnIcon" class="fa fa-bars"></i>
+                <i id="ShutNavIcon" class="fa fa-times"></i>
+            </button>
+            <ol id="NavMenu" class="animate__animated">
+                <li>
+                    <a href="index.html">
+                        <p class="PageName">回到主页</p><div class="PageIcon"><i class="fa fa-home"></i></div>
+                    </a>
+                </li>
+                <li>
+                    <a href="idea.html">
+                        <p class="PageName">设计生成</p><div class="PageIcon"><i class="fa fa-lightbulb-o"></i></div>
+                    </a>
+                </li>
+                <li>
+                    <a href="drawings.html">
+                        <p class="PageName">技术图纸</p><div class="PageIcon"><i class="fa fa-pencil"></i></div>
+                    </a>
+                </li>
+                <li>
+                    <a href="more.html">
+                        <p class="PageName">更多内容</p><div class="PageIcon"><i class="fa fa-info"></i></div>
+                    </a>
+                </li>
+            </ol>
+        </div>
+
+        <div class="Title">
+            <i class="fa fa-picture-o animate__animated animate__fadeInDown"></i>
+            <h1 class="animate__animated animate__fadeInDown">效果展示</h1>
+        </div>
+
+        <div class="Banner animate__animated animate__slideInDown"></div>
+
+        <div id="MainContent">
+            <div id="FarView">
+                <h2 class="wow pulse">远景效果图</h2>
+                <div class="TextContent">
+                    <h3 class="Slogan">想<span class="Italic ThemeColor">飞上天</span>，<br>和太阳肩并肩。</h3>
+                    <p>在<span class="ThemeColor Important">鸟瞰图</span>里，整座博物馆的形态显得非常简洁。</p>
+                </div>
+                <div class="ImgContent">
+                    <img id="BirdView" class="wow slideInUp" src="img/Rendering4.png">
+                </div>
+                <div class="TextContent">
+                <h3 class="Slogan">左看，右看，<br>处处<span class="Italic ThemeColor">精彩</span>。</h3>
+                <p>点击按钮，一步步地去看一下博物馆的外景吧。</p>
+                </div>
+                <div class="ImgContent">
+                    <button id="StartFarViewBtn" onclick="StartFarView()">点击开始</button>
+                    <div id="FarViewPanel" class="animate__animated">
+                        <img id="FarView1" class="animate__animated" src="img/Rendering1.png">
+                        <img id="FarView2" class="animate__animated" src="img/Rendering3.png">
+                        <img id="FarView3" class="animate__animated" src="img/Rendering2.png">
+                        <div id="MoveControls">
+                            <button id="LeftMoveBtn" class="MoveControl" onclick="MoveLeft()" disabled>走左边看看</button>
+                            <button id="RightMoveBtn" class="MoveControl" onclick="MoveRight()">走右边看看</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="TextContent">
+                    <h3 class="Slogan"><span class="Italic ThemeColor">剖透视</span>里，<br>各个空间各有故事。</h3>
+                    <p>如果感觉剖透视图有些失真，可以跳转到<a href="drawings.html">技术图纸页面</a>查看剖面图。</p>
+                </div>
+                <div class="ImgContent">
+                    <img class="wow slideInUp" src="img/Rendering5.png">
+                </div>
+            </div>
+            <div id="NearView">
+                <h2 class="wow pulse">近景效果图</h2>
+                <div class="TextContent">
+                    <h3 class="Slogan">室内近景，<br><span class="Italic ThemeColor">交接有细节</span>。</h3>
+                    <p>点击三张近景渲染图片，即可查看<span class="Important ThemeColor">细部交接构造</span>位置与图纸。</p>
+                </div>
+                <div class="ImgContent">
+                    <img id="NearView1" class="animate__animated" src="img/Rendering6-1.png" onclick="NextNearView1()">
+                    <h4 class="ImgName">一层室内公共交通区</h4>
+                </div>
+                <div class="ImgContent">
+                    <img id="NearView2" class="animate__animated" src="img/Rendering7-1.png" onclick="NextNearView2()">
+                    <h4 class="ImgName">一层北侧室外走廊</h4>
+                </div>
+                <div class="ImgContent">
+                    <img id="NearView3" class="animate__animated" src="img/Rendering8-1.png" onclick="NextNearView3()">
+                    <h4 class="ImgName">二层南侧室外阳台</h4>
+                </div>
+            </div>
+            <div id="Video" class="TextContent">
+                <h3 class="wow pulse">看不过瘾？<br>我<span class="Italic ThemeColor">还有一手</span>。</h3>
+                <p>我就懂你，看图片可能还不过瘾。特地留有一手，邀你<a href="video.html">观看视频</a>！</p>
+            </div>
+        </div>
+
+        <a href="more.html" id="GoToNext">继续查看下一内容</a>
+
+        <div id="Footer">
+            <p id="Acknowledgment">
+                感谢jQuery提供的JavaScript支持；<br>
+                感谢Animate.css和wow.js提供的动效支持；<br>
+                也感谢你的观看！<br>
+            </p>
+        </div>
+    </body>
+</html>

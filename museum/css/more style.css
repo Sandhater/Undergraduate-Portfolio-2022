@@ -1,0 +1,51 @@
+/******************************************标题与头图区样式***************************************************/
+.Title{
+    color: rgb(38, 70, 83);
+}
+
+.Banner{
+    background-image: url('../img/MoreTab.jpg');
+}
+
+/******************************************主内容区样式***************************************************/
+h2{
+    background-image: linear-gradient(to bottom right, white, rgb(38, 70, 83));
+    -webkit-background-clip: text;
+    color:transparent;
+}
+
+#ExplodeBtn{
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: white;
+    background-color: rgb(38, 70, 83);
+    width: 8rem;
+    height: 8rem;
+    border-radius: 4rem;
+    border-width: 0px;
+    margin-left: calc(50vw - 4rem);
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    cursor: pointer;
+}
+
+#ExplosionContent{
+    display: none;
+}
+
+#MainContent img{
+    width: 100vw;
+}
+
+#ExplosionContent img{
+    height: min(960px, 80vh);
+    object-fit: contain;
+}
+
+.ThemeColor{
+    color:rgb(38, 70, 83);
+}
+
+#GoToNext{
+    background-color: rgb(38, 70, 83);
+}

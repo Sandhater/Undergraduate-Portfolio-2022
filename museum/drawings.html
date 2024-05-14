@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+        <title>作业博物馆</title>
+        <link rel="shortcut icon" href="img/logo.ico">
+        <link href="https://cdn.bootcdn.net/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet">
+        <!--下面版本的animate仅限配合wow使用-->
+        <link href="https://cdn.bootcdn.net/ajax/libs/animate.css/3.7.2/animate.min.css" rel="stylesheet"> 
+        <link rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.css">
+        <link href="css/basic.css" rel="stylesheet">
+        <link href="css/drawings style.css" rel="stylesheet">
+        <link href="css/pad.css" media="screen and (min-width:768px)" rel="stylesheet">
+        <link href="css/desktop.css" media="screen and (min-width:1080px)" rel="stylesheet">
+        <link href="css/desktop.css" media="screen and (orientation:landscape)" rel="stylesheet">
+        <script src="js/jquery-3.6.0.min.js"></script>
+        <script src="js/reaction.js"></script>
+        <script src="https://cdn.bootcdn.net/ajax/libs/wow/1.1.2/wow.min.js"></script>
+        <script>
+            new WOW().init();
+        </script>
+    </head>
+    <body>
+        <div id="Nav">
+            <button id="NavBtn" class="animate__animated animate__bounceInUp" onclick="ShowNavMenu()">
+                <i id="NavBtnIcon" class="fa fa-bars"></i>
+                <i id="ShutNavIcon" class="fa fa-times"></i>
+            </button>
+            <ol id="NavMenu" class="animate__animated">
+                <li>
+                    <a href="index.html">
+                        <p class="PageName">回到主页</p><div class="PageIcon"><i class="fa fa-home"></i></div>
+                    </a>
+                </li>
+                <li>
+                    <a href="idea.html">
+                        <p class="PageName">设计生成</p><div class="PageIcon"><i class="fa fa-lightbulb-o"></i></div>
+                    </a>
+                </li>
+                <li>
+                    <a href="rendering.html">
+                        <p class="PageName">效果展示</p><div class="PageIcon"><i class="fa fa-picture-o"></i></div>
+                    </a>
+                </li>
+                <li>
+                    <a href="more.html">
+                        <p class="PageName">更多内容</p><div class="PageIcon"><i class="fa fa-info"></i></div>
+                    </a>
+                </li>
+            </ol>
+        </div>
+
+        <div class="Title">
+            <i class="fa fa-pencil animate__animated animate__fadeInDown"></i>
+            <h1 class="animate__animated animate__fadeInDown">技术图纸</h1>
+        </div>
+
+        <div class="Banner animate__animated animate__slideInDown"></div>
+
+        <div id="MainContent">
+            <div id="Plan">
+                <h2  class="wow pulse">平面图</h2>
+                <div class="TextContent">
+                    <h3 class="Slogan">总平面，<br><span class="Italic ThemeColor">一览全局</span>。</h3>
+                    <p>场地位于清华路和近春路交叉口的东北角，即现在西湖游泳池所在地。整个建筑主要<span class="Important ThemeColor">面向西南开放</span>，
+                    <span class="Important ThemeColor">面向北侧和西侧取景</span>。原来的泳池被改造成下沉广场，与建筑相接。</p>
+                </div>
+                <div class="ImgContent">
+                    <img id="GeneralPlan" src="img/General.png" class="wow slideInUp">
+                    <h4 class="ImgName">总平面图</h4>
+                </div>
+                <div class="TextContent">
+                    <h3 class="Slogan"><span class="Italic ThemeColor">空间布局</span>，<br>请看各层平面。</h3>
+                    <p>一层平面是主要的展厅分布层，各个展厅被四通八达的交通空间相连。</p>
+                </div>
+                <div class="ImgContent">
+                    <img id="Plan1" src="img/Plan1.png" class="Tabs wow slideInUp">
+                    <h4 class="ImgName">一层平面图</h4>
+                </div>
+                <div class="TextContent">
+                    <p>作为一层“负形”的二层，除了继续部分展览功能外，还提供大量的外阳台供游客休憩、玩耍。</p>
+                </div>
+                <div class="ImgContent">
+                    <img id="Plan2" src="img/Plan2.png" class="Tabs wow slideInUp">
+                    <h4 class="ImgName">二层平面图</h4>
+                </div>
+            </div>
+            <div id="EleAndSection">
+                <h2 class="wow pulse">立剖面图</h2>
+                <div class="TextContent">
+                    <h3 class="Slogan"><span class="Italic ThemeColor">横纵线条</span>之美，<br>立面图在此<br>为您呈现。</h3>
+                    <p>南立面以非常完整规则的外轮廓出现，但数个倾斜的木板柱却带来一些<span class="ThemeColor Important">随机之美</span>。
+                    西立面则着重表现南高北低的<span class="ThemeColor Important">倾斜屋顶</span>，以及在下沉广场上方<span class="ThemeColor Important">半悬空的态势</span>。</p>
+                </div>
+                <div class="ImgContent">
+                    <img id="Elevation1" src="img/Elevation1.png" class="Tabs wow slideInUp">
+                    <h4 class="ImgName">南立面图</h4>
+                    <img id="Elevation2" src="img/Elevation2.png" class="Tabs wow slideInUp">
+                    <h4 class="ImgName">西立面图</h4>
+                </div>
+                <div class="TextContent">
+                    <h3 class="Slogan">剖开！<br><span class="Italic ThemeColor">内有洞天</span>。</h3>
+                    <p>剖面图除了继续表现立面图所要强调的要素，也展示出了形态生成中提到的“<span class="ThemeColor Important">下陷体块</span>”。</p>
+                </div>
+                <div class="ImgContent">
+                    <img id="Section1" src="img/Section1.png" class="Tabs wow slideInUp">
+                    <h4 class="ImgName">A-A'立面图</h4>
+                    <img id="Section2" src="img/Section2.png" class="Tabs wow slideInUp">
+                    <h4 class="ImgName">B-B'立面图</h4>
+                </div>
+            </div>
+        </div>
+
+        <a href="rendering.html" id="GoToNext">继续查看下一内容</a>
+
+        <div id="Footer">
+            <p id="Acknowledgment">
+                感谢jQuery提供的JavaScript支持；<br>
+                感谢Animate.css和wow.js提供的动效支持；<br>
+                也感谢你的观看！<br>
+            </p>
+        </div>
+    </body>
+</html>

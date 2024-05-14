@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+        <title>作业博物馆</title>
+        <link rel="shortcut icon" href="img/logo.ico">
+        <link href="https://cdn.bootcdn.net/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet">
+        <!--下面版本的animate仅限配合wow使用-->
+        <link href="https://cdn.bootcdn.net/ajax/libs/animate.css/3.7.2/animate.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.css">
+        <link href="css/basic.css" rel="stylesheet">
+        <link href="css/idea style.css" rel="stylesheet">
+        <link href="css/pad.css" media="screen and (min-width:768px)" rel="stylesheet">
+        <link href="css/desktop.css" media="screen and (min-width:1080px)" rel="stylesheet">
+        <link href="css/desktop.css" media="screen and (orientation:landscape)" rel="stylesheet">
+        <script src="js/jquery-3.6.0.min.js"></script>
+        <script src="js/reaction.js"></script>
+        <script src="https://cdn.bootcdn.net/ajax/libs/wow/1.1.2/wow.min.js"></script>
+        <script>
+            new WOW().init();
+        </script>
+    </head>
+    <body>
+        <div id="Nav">
+            <button id="NavBtn" class="animate__animated animate__bounceInUp" onclick="ShowNavMenu()">
+                <i id="NavBtnIcon" class="fa fa-bars"></i>
+                <i id="ShutNavIcon" class="fa fa-times"></i>
+            </button>
+            <ol id="NavMenu" class="animate__animated">
+                <li>
+                    <a href="index.html">
+                        <p class="PageName">回到主页</p><div class="PageIcon"><i class="fa fa-home"></i></div>
+                    </a>
+                </li>
+                <li>
+                    <a href="drawings.html">
+                        <p class="PageName">技术图纸</p><div class="PageIcon"><i class="fa fa-pencil"></i></div>
+                    </a>
+                </li>
+                <li>
+                    <a href="rendering.html">
+                        <p class="PageName">效果展示</p><div class="PageIcon"><i class="fa fa-picture-o"></i></div>
+                    </a>
+                </li>
+                <li>
+                    <a href="more.html">
+                        <p class="PageName">更多内容</p><div class="PageIcon"><i class="fa fa-info"></i></div>
+                    </a>
+                </li>
+            </ol>
+        </div>
+
+        <div class="Title">
+            <i class="fa fa-lightbulb-o animate__animated animate__fadeInDown"></i>
+            <h1 class="animate__animated animate__fadeInDown">设计生成</h1>
+        </div>
+
+        <div class="Banner animate__animated animate__slideInDown"></div>
+
+        <div id="MainContent">
+            <div id="AboutTheme">
+                <h2 class="wow pulse">主题选择</h2>
+                <div class="TextContent">
+                    <h3 class="Slogan">“你也要<br>向这些<span class="ThemeColor Italic">哥哥姐姐<br></span>学习呀。”</h3>
+                    <p><span class="Important ThemeColor">对远道而来的游客而言，</span>清华的吸引点往往不在于校史馆展现的峥嵘往事，也不在于艺博拥有的精美展品。
+                    父母带着小孩来参观时，更多期望子女能看见“别人家孩子”的优秀，能向往顶尖大学的学习与生活，以此激励他们发奋努力。</p>
+                </div>
+                <div class="ImgContent">
+                    <img src="img/Theme1.png" class="wow slideInUp">
+                </div>
+                <div class="TextContent">
+                    <h3 class="Slogan">“<span class="ThemeColor Italic">别的专业，<br>别的课程，<br></span>我想去了解。”</h3>
+                    <p><span class="Important ThemeColor">对生活在园子里的同学而言，</span>新生期望着了解未来几年里将会学习的知识与技能；老生也会想了解别的专业、
+                    别的课程上发生的自己有所耳闻却难以亲见的趣事。</p>
+                </div>
+                <div class="ImgContent">
+                    <img src="img/Theme2.png" class="wow slideInUp">
+                </div>
+                <div class="TextContent">
+                    <h3 class="Slogan">这些课程，<br>这些作业，<br><span class="ThemeColor Italic">包您满意</span>。</h3>
+                    <p>从设计类专业的精美图纸，到信息类专业开发的程序；从亲手打造自己的工艺品，到拍摄自己做主角的微电影，再到亲身参与的模拟法庭实践……
+                        同学的作业，是<span class="Important ThemeColor">清华的丰富资源</span>，也是<span class="Important ThemeColor">满足你需求的绝佳载体</span>。</p>
+                </div>
+                <div class="ImgContent">
+                    <img src="img/Theme3.png" class="wow slideInUp">
+                </div>
+                <div class="TextContent">
+                    <h3 class="Slogan">种种展品形式，<br><span class="ThemeColor Italic">不单调</span>。</h3>
+                    <p>这座博物馆，展品不单调。<span class="Important ThemeColor">装置模型、实践活动、图片图纸、论文著书、音频视频、程序网页</span>
+                        ，你想见的，都在这里。</p>
+                </div>
+                <div class="ImgContent">
+                    <img src="img/Theme4.png" class="wow slideInUp">
+                </div>
+            </div>
+
+            <div id="AboutForm">
+                <h2 class="wow pulse">形态生成</h2>
+                <div class="TextContent">
+                    <h3 class="Slogan">设计个形态？<br>手段<span class="Italic ThemeColor">很简单</span>。</h3>
+                    <p class="StageDescription">提取场地中游泳池的轮廓形状；</p>
+                </div>
+                <div class="ImgContent">
+                <img id="FormStage" src="img/Form1.png" class="animate__animated">
+                    <div id="StageIndicator">
+                        <div id="StageIndex" class="Important ThemeColor">1</div>
+                        <button id="FormStageBtn" onclick="NextFormStage(this)">查看下一步</button>
+                    </div>
+                    <p class="StageDescription">提取场地中游泳池的轮廓形状；</p>
+                </div>
+            </div>
+            
+            <div id="AboutLayOut">
+                <h2 class="wow pulse">布局构思</h2>
+                <div class="TextContent">
+                    <h3 class="Slogan"><span class="Italic ThemeColor">一座座岛</span>，<br>连起来。</h3>
+                    <p>在博物馆的<span class="Important ThemeColor">一层布局</span>中，每一个展厅就是一个岛屿，游客可以顺着廊道的“航线”前往，去勘察清华的风景；
+                        而当学生在厅内活动时，游客又可以在廊道的末叉驻留，仅隔着窗向厅内望去，做一个<span class="Important ThemeColor">望道者</span>。</p>
+                </div>
+                <div class="ImgContent">
+                    <img src="img/LayOut1.png" class="wow slideInUp">
+                </div>
+                <div class="TextContent">
+                <h3 class="Slogan"><span class="Italic ThemeColor">图底反转</span>，<br>新的一层新景象。</h3>
+                    <p>而博物馆的<span class="Important ThemeColor">二层布局</span>则将一层的图底关系进行了反转，
+                        原来不规则形状的走道成为了展厅，原来整块的展厅成了露台或吹拔。
+                        游客不再是向内望的望道者，而成为向外看的<span class="Important ThemeColor">眺望者</span>。</p>
+                </div>
+                <div class="ImgContent">
+                    <img src="img/LayOut2.png" class="wow slideInUp">
+                </div>
+            </div>
+        </div>
+
+        <a href="drawings.html" id="GoToNext">继续查看下一内容</a>
+
+        <div id="Footer">
+            <p id="Acknowledgment">
+                感谢jQuery提供的JavaScript支持；<br>
+                感谢Animate.css和wow.js提供的动效支持；<br>
+                也感谢你的观看！<br>
+            </p>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+        <title>作业博物馆</title>
+        <link rel="shortcut icon" href="img/logo.ico">
+        <link href="https://cdn.bootcdn.net/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.css">
+        <link href="css/basic.css" rel="stylesheet">
+        <link href="css/video style.css" rel="stylesheet">
+        <link href="css/desktop.css" media="screen and (min-width:1080px)" rel="stylesheet">
+        <link href="css/desktop.css" media="screen and (orientation:landscape)" rel="stylesheet">
+        <script src="js/jquery-3.6.0.min.js"></script>
+        <script src="js/reaction.js"></script>
+    </head>
+    <body>
+        <div id="Nav">
+            <button id="NavBtn" class="animate__animated animate__bounceInUp" onclick="ShowNavMenu()">
+                <i id="NavBtnIcon" class="fa fa-bars"></i>
+                <i id="ShutNavIcon" class="fa fa-times"></i>
+            </button>
+            <ol id="NavMenu" class="animate__animated">
+                <li>
+                    <a href="index.html">
+                        <p class="PageName">回到主页</p><div class="PageIcon"><i class="fa fa-home"></i></div>
+                    </a>
+                </li>
+                <li>
+                    <a href="idea.html">
+                        <p class="PageName">设计生成</p><div class="PageIcon"><i class="fa fa-lightbulb-o"></i></div>
+                    </a>
+                </li>
+                <li>
+                    <a href="drawings.html">
+                        <p class="PageName">技术图纸</p><div class="PageIcon"><i class="fa fa-pencil"></i></div>
+                    </a>
+                </li>
+                <li>
+                    <a href="rendering.html">
+                        <p class="PageName">效果展示</p><div class="PageIcon"><i class="fa fa-picture-o"></i></div>
+                    </a>
+                </li>
+                <li>
+                    <a href="more.html">
+                        <p class="PageName">更多内容</p><div class="PageIcon"><i class="fa fa-info"></i></div>
+                    </a>
+                </li>
+            </ol>
+        </div>
+
+        <div class="Title">
+            <i class="fa fa-video-camera animate__animated animate__fadeInDown"></i>
+            <h1 class="animate__animated animate__fadeInDown">视频</h1>
+        </div>
+        
+        <div class="VideoPart" style="position: relative; padding: 25% 45%;">
+            <iframe src="https://player.bilibili.com/player.html?aid=848875866&bvid=BV1mL4y1i7ti&cid=434037003&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" style="position: absolute; left: 0; top: 0;" sandbox="allow-top-navigation allow-same-origin allow-forms allow-scripts"> </iframe>
+        </div>
+
+        <div id="Note">
+            <p>如果视频无法正常播放，可以<a href="https://www.bilibili.com/video/BV1mL4y1i7ti?share_source=copy_web">点击此处</a>观看B站原视频，或者<a href="https://cloud.tsinghua.edu.cn/f/5cf7e08b28e04bcdb48e/">点击下载</a>视频文件。😀</p>
+        </div>
+
+        <div id="Footer">
+            <p id="Acknowledgment">
+                感谢jQuery提供的JavaScript支持；<br>
+                感谢Animate.css和wow.js提供的动效支持；<br>
+                也感谢你的观看！<br>
+            </p>
+        </div>
+    </body>
+</html>
